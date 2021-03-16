@@ -1,14 +1,22 @@
 [class*="col-"]{
+  position: relative;
   height: 200px;
   background-color: rgb(254, 192, 203);
   border: 1px solid black;
   padding: 5px;
   text-align: center;
-  line-height: 180px;
+
 }
 
 .container>.col-6 [class*="col-"]{
-  height: 190px;
+  height: 100%;
   border-color: #fff;
   background-color: rgb(240, 128, 128);
+}
+
+.container> [class*="col-"] span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
